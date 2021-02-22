@@ -96,7 +96,7 @@
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_live_51HJTHgEdmFVR1Ul4aB02A7vuZf09kX7XTFtWSjaZltnYVKINNKoa5TEyozqV1t15H39o4hwXUNt5vNRCOI0IyUfD00paO78j7e");
+                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
 
                       var checkoutButton = document.getElementById("checkout-button-price_1INU8FE7pu7VL307tSJ70AZ5");
                       checkoutButton.addEventListener("click", function () {
@@ -111,8 +111,8 @@
                             // a successful payment.
                             // Instead use one of the strategies described in
                             // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://iiiiikasu.s3-ap-northeast-1.amazonaws.com/success.html",
-                            cancelUrl: "https://iiiiikasu.s3-ap-northeast-1.amazonaws.com/index.html",
+                            successUrl: "https://kkhr1341.github.io/stripe_test",
+                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
                           })
                           .then(function (result) {
                             if (result.error) {
