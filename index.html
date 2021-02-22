@@ -90,7 +90,7 @@
                   <script src="https://js.stripe.com/v3"></script>
 
                   <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1INU8FE7pu7VL307tSJ70AZ5" role="link" type="button">購入する</button>
+                  <button class="btn btn-primary" id="checkout" role="link" type="button">購入する</button>
 
                   <div id="error-message"></div>
 
@@ -98,14 +98,14 @@
                     (function () {
                       var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
 
-                      var checkoutButton = document.getElementById("checkout-button-price_1INU8FE7pu7VL307tSJ70AZ5");
+                      var checkoutButton = document.getElementById("checkout");
                       checkoutButton.addEventListener("click", function () {
                         // When the customer clicks on the button, redirect
                         // them to Checkout.
                         stripe
                           .redirectToCheckout({
                             lineItems: [{ price: "price_1INU8FE7pu7VL307tSJ70AZ5", quantity: 1 }],
-                            mode: "payment",
+                            mode: "subscription",
                             // Do not rely on the redirect to the successUrl for fulfilling
                             // purchases, customers may not always reach the success_url after
                             // a successful payment.
@@ -151,7 +151,7 @@
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_live_51HJTHgEdmFVR1Ul4aB02A7vuZf09kX7XTFtWSjaZltnYVKINNKoa5TEyozqV1t15H39o4hwXUNt5vNRCOI0IyUfD00paO78j7e");
+                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
 
                       var checkoutButton = document.getElementById("checkout-button-price_1HJbfvEdmFVR1Ul40iSfYu5M");
                       checkoutButton.addEventListener("click", function () {
@@ -205,7 +205,7 @@
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_live_51HJTHgEdmFVR1Ul4aB02A7vuZf09kX7XTFtWSjaZltnYVKINNKoa5TEyozqV1t15H39o4hwXUNt5vNRCOI0IyUfD00paO78j7e");
+                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
 
                       var checkoutButton = document.getElementById("checkout-button-price_1HJbGGEdmFVR1Ul4skb0sAf0");
                       checkoutButton.addEventListener("click", function () {
@@ -260,7 +260,7 @@
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_live_51HJTHgEdmFVR1Ul4aB02A7vuZf09kX7XTFtWSjaZltnYVKINNKoa5TEyozqV1t15H39o4hwXUNt5vNRCOI0IyUfD00paO78j7e");
+                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
 
                       var checkoutButton = document.getElementById("checkout-button-price_1HJbgVEdmFVR1Ul4d4aROihu");
                       checkoutButton.addEventListener("click", function () {
