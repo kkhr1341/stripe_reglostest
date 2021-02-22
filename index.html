@@ -81,8 +81,8 @@
                 <img src="assets/images/mbr-676x451.jpg" alt="Mobirise" title="" />
               </div>
               <div class="card-box">
-                <h4 class="card-title mbr-fonts-style display-7">12億円を売り上げた<br />悪魔の情報商材術</h4>
-                <p class="mbr-text mbr-fonts-style display-7">Note史上、1週間で最も売れた有料投稿。人を騙す悪魔の手法と顧客名簿3000名もセットで13800円です。<br />数に限りがあります！</p>
+                <h4 class="card-title mbr-fonts-style display-7">一括払い</h4>
+                <p class="mbr-text mbr-fonts-style display-7">テストです</p>
               </div>
               <div class="mbr-section-btn text-center">
                 <div class="navbar-buttons mbr-section-btn">
@@ -136,8 +136,8 @@
                 <img src="assets/images/mbr-676x405.jpg" alt="Mobirise" title="" />
               </div>
               <div class="card-box">
-                <h4 class="card-title mbr-fonts-style display-7">情報商材は世界へ羽ばたく</h4>
-                <p class="mbr-text mbr-fonts-style display-7">ベトナム史上、最大の詐欺と言われた700億円のICO。医カスが作ったスキームがモデルです。情報商材を海外で展開する上で必要なことが書いてあります。顧客名簿500名ついて4980円です。<br /></p>
+                <h4 class="card-title mbr-fonts-style display-7">サブスクリプション</h4>
+                <p class="mbr-text mbr-fonts-style display-7">テストです</p>
               </div>
               <div class="mbr-section-btn text-center">
                 <div class="navbar-buttons mbr-section-btn">
@@ -159,15 +159,15 @@
                         // them to Checkout.
                         stripe
                           .redirectToCheckout({
-                            lineItems: [{ price: "price_1HJbfvEdmFVR1Ul40iSfYu5M", quantity: 1 }],
-                            mode: "payment",
+                            lineItems: [{ price: "price_1INXSjE7pu7VL3073VWHLsGy", quantity: 1 }],
+                            mode: "subscription",
                             // Do not rely on the redirect to the successUrl for fulfilling
                             // purchases, customers may not always reach the success_url after
                             // a successful payment.
                             // Instead use one of the strategies described in
                             // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://iiiiikasu.s3-ap-northeast-1.amazonaws.com/success.html",
-                            cancelUrl: "https://iiiiikasu.s3-ap-northeast-1.amazonaws.com/index.html",
+                            successUrl: "https://kkhr1341.github.io/stripe_test",
+                            cancelUrl: "https://kkhr1341.github.io/stripe_test",
                           })
                           .then(function (result) {
                             if (result.error) {
