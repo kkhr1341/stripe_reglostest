@@ -105,7 +105,7 @@
                         stripe
                           .redirectToCheckout({
                             lineItems: [{ price: "price_1INVD5E7pu7VL307ZppGlFn7", quantity: 1 }],
-                            mode: "subscription",
+                            mode: "payment",
                             // Do not rely on the redirect to the successUrl for fulfilling
                             // purchases, customers may not always reach the success_url after
                             // a successful payment.
