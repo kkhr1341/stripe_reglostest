@@ -441,7 +441,7 @@ body {
   color: #ffffff !important;
 }
 .text-black {
-  color: #000000 !important;
+  color: #fff !important;
 }
 a.text-primary:hover,
 a.text-primary:focus {
@@ -750,7 +750,7 @@ section.lazy-placeholder:after {
   color: #767676;
 }
 .cid-rU6IeUtJZt .card-wrapper {
-  height: 100%;
+  min-height: 450px;
   padding-bottom: 2rem;
   background: #ffffff;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
@@ -808,7 +808,7 @@ section.lazy-placeholder:after {
 .cid-rUYf6AciFR {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-image: url("../../images/background4.jpg");
+  background-image: url("../../img/main-image003.jpg");
 }
 .cid-rUYf6AciFR .media-container-row {
   flex-direction: row-reverse;
@@ -1027,7 +1027,7 @@ section.lazy-placeholder:after {
 .cid-rUXW8Cp9rz {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-image: url("../../images/mbr-1920x1276.jpg");
+  background-image: url("../../img/main-image004.jpg");
 }
 .cid-rU6ITF7OTk {
   padding-top: 90px;
@@ -3402,7 +3402,7 @@ section.lazy-placeholder:after {
   margin: 0 0 0.5rem 0;
 }
 #menu1 .navbar {
-  background: #ffffff;
+  background: #466066;
   transition: none;
   min-height: 77px;
   padding: 0.5rem 0;
