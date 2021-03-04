@@ -104,8 +104,8 @@ body {
 }
 .btn-primary,
 .btn-primary:active {
-  background-color: #149dcc !important;
-  border-color: #149dcc !important;
+  background-color: #0a884e !important;
+  border-color: #0ba15b #086e3e !important;
   color: #ffffff !important;
 }
 .btn-primary:hover,
@@ -113,8 +113,8 @@ body {
 .btn-primary.focus,
 .btn-primary.active {
   color: #ffffff !important;
-  background-color: #0d6786 !important;
-  border-color: #0d6786 !important;
+  background-color: #065933 !important;
+  border-color: #044025 #087343 !important;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -713,7 +713,7 @@ section.lazy-placeholder:after {
   letter-spacing: 0.2rem;
 }
 .cid-rU6HCSrPef .media-container-column {
-  background-color: #4f4943;
+  background-color: #4e4f4fcc;
 }
 @media (max-width: 767px) {
   .cid-rU6HCSrPef .media-container-column {
@@ -726,7 +726,7 @@ section.lazy-placeholder:after {
   background-color: #efefef;
 }
 .cid-rU6IeUtJZt .card-box {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .cid-rU6IeUtJZt .mbr-section-btn {
   padding-top: 1rem;

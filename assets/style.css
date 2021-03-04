@@ -9,3 +9,51 @@ body::-webkit-scrollbar {
 .card {
   height: 100%;
 }
+.card-wrapper {
+  display: grid;
+  grid-template-rows: max-content auto min-content;
+}
+.flat,
+.flat:active {
+  border-color: #086e3e !important;
+}
+.flat:hover,
+.flat:focus,
+.flat.focus,
+.flat.active {
+  border-color: #087343 !important;
+}
+.tw_pri,
+.tw_pri:active {
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
+}
+.tw_pri:hover,
+.tw_pri:focus,
+.tw_pri.focus,
+.tw_pri.active {
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+.js-scroll {
+  opacity: 0;
+  transition: all 1s;
+  transform: translate(100px, 0px) scale(1);
+}
+.js-scroll-in {
+  opacity: 1;
+  transform: translate(0px, 0px) scale(1);
+}
+.js-scroll-blur {
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transform: translate(0px, 0px);
+}
+.js-scroll-blur-in {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
