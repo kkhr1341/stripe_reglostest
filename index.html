@@ -217,7 +217,7 @@
                   <script src="https://js.stripe.com/v3"></script>
 
                   <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1IRVMqDV8PGzT8FTCXYgV2Op" role="link" type="button">購入する</button>
+                  <button class="btn btn-primary" id="checkout-button-price_1IRVU2DV8PGzT8FTXCjcBscM" role="link" type="button">購入する</button>
 
                   <div id="error-message"></div>
 
@@ -225,13 +225,13 @@
                     (function () {
                       var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
-                      var checkoutButton = document.getElementById("checkout-button-price_1IRVMqDV8PGzT8FTCXYgV2Op");
+                      var checkoutButton = document.getElementById("checkout-button-price_1IRVU2DV8PGzT8FTXCjcBscM");
                       checkoutButton.addEventListener("click", function () {
                         // When the customer clicks on the button, redirect
                         // them to Checkout.
                         stripe
                           .redirectToCheckout({
-                            lineItems: [{ price: "price_1IRVMqDV8PGzT8FTCXYgV2Op", quantity: 1 }],
+                            lineItems: [{ price: "price_1IRVU2DV8PGzT8FTXCjcBscM", quantity: 1 }],
                             mode: "payment",
                             // Do not rely on the redirect to the successUrl for fulfilling
                             // purchases, customers may not always reach the success_url after
