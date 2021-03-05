@@ -59,7 +59,7 @@
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
+                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
                       var checkoutButton = document.getElementById("checkout");
                       checkoutButton.addEventListener("click", function () {
@@ -67,15 +67,15 @@
                         // them to Checkout.
                         stripe
                           .redirectToCheckout({
-                            lineItems: [{ price: "price_1IOE0CE7pu7VL307afZjCFO2", quantity: 1 }],
+                            lineItems: [{ price: "price_1IRDgODV8PGzT8FTQRfvvr9j", quantity: 1 }],
                             mode: "payment",
                             // Do not rely on the redirect to the successUrl for fulfilling
                             // purchases, customers may not always reach the success_url after
                             // a successful payment.
                             // Instead use one of the strategies described in
                             // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test",
+                            successUrl: "https://kkhr1341.github.io/stripe_test/",
+                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
                           })
                           .then(function (result) {
                             if (result.error) {
@@ -108,29 +108,29 @@
                   <script src="https://js.stripe.com/v3"></script>
 
                   <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1IOEycE7pu7VL307Th29asf4" role="link" type="button">30000円<br />購入する</button>
+                  <button class="btn btn-primary" id="checkout-button-price_1IRDhGDV8PGzT8FTPs49S6MF" role="link" type="button">30000円<br />購入する</button>
 
                   <div id="error-message"></div>
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
+                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
-                      var checkoutButton = document.getElementById("checkout-button-price_1IOEycE7pu7VL307Th29asf4");
+                      var checkoutButton = document.getElementById("checkout-button-price_1IRDhGDV8PGzT8FTPs49S6MF");
                       checkoutButton.addEventListener("click", function () {
                         // When the customer clicks on the button, redirect
                         // them to Checkout.
                         stripe
                           .redirectToCheckout({
-                            lineItems: [{ price: "price_1IOEycE7pu7VL307Th29asf4", quantity: 1 }],
+                            lineItems: [{ price: "price_1IRDhGDV8PGzT8FTPs49S6MF", quantity: 1 }],
                             mode: "payment",
                             // Do not rely on the redirect to the successUrl for fulfilling
                             // purchases, customers may not always reach the success_url after
                             // a successful payment.
                             // Instead use one of the strategies described in
                             // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test",
+                            successUrl: "https://kkhr1341.github.io/stripe_test/",
+                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
                           })
                           .then(function (result) {
                             if (result.error) {
@@ -162,29 +162,29 @@
                   <script src="https://js.stripe.com/v3"></script>
 
                   <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1IOF1TE7pu7VL307bKWgDX2Y" role="link" type="button">300000円<br />購入する</button>
+                  <button class="btn btn-primary" id="checkout-button-price_1IRDhsDV8PGzT8FTcsDzY7KZ" role="link" type="button">300000円<br />購入する</button>
 
                   <div id="error-message"></div>
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
+                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
-                      var checkoutButton = document.getElementById("checkout-button-price_1IOF1TE7pu7VL307bKWgDX2Y");
+                      var checkoutButton = document.getElementById("checkout-button-price_1IRDhsDV8PGzT8FTcsDzY7KZ");
                       checkoutButton.addEventListener("click", function () {
                         // When the customer clicks on the button, redirect
                         // them to Checkout.
                         stripe
                           .redirectToCheckout({
-                            lineItems: [{ price: "price_1IOF1TE7pu7VL307bKWgDX2Y", quantity: 1 }],
+                            lineItems: [{ price: "price_1IRDhsDV8PGzT8FTcsDzY7KZ", quantity: 1 }],
                             mode: "payment",
                             // Do not rely on the redirect to the successUrl for fulfilling
                             // purchases, customers may not always reach the success_url after
                             // a successful payment.
                             // Instead use one of the strategies described in
                             // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test",
+                            successUrl: "https://kkhr1341.github.io/stripe_test/",
+                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
                           })
                           .then(function (result) {
                             if (result.error) {
@@ -202,7 +202,7 @@
             </div>
           </div>
 
-          <div class="js-scroll-blur card p-3 col-12 col-md-6 col-lg-3">
+          <!-- <div class="js-scroll-blur card p-3 col-12 col-md-6 col-lg-3">
             <div class="card-wrapper">
               <div class="card-img">
                 <img src="assets/img/content004.jpg" alt="Mobirise" title="" />
@@ -212,18 +212,18 @@
                 <p class="mbr-text mbr-fonts-style display-7"></p>
               </div>
               <div class="mbr-section-btn text-center">
-                <div class="navbar-buttons mbr-section-btn">
-                  <!-- Load Stripe.js on your website. -->
-                  <script src="https://js.stripe.com/v3"></script>
+                <div class="navbar-buttons mbr-section-btn"> -->
+          <!-- Load Stripe.js on your website. -->
+          <!-- <script src="https://js.stripe.com/v3"></script> -->
 
-                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1INXSjE7pu7VL3073VWHLsGy" role="link" type="button">購入する</button>
+          <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+          <!-- <button class="btn btn-primary" id="checkout-button-price_1INXSjE7pu7VL3073VWHLsGy" role="link" type="button">購入する</button> -->
 
-                  <div id="error-message"></div>
+          <!-- <div id="error-message"></div>
 
                   <script>
                     (function () {
-                      var stripe = Stripe("pk_test_51INTcHE7pu7VL307zkQyA5GiZ7DNjQ09kjcMAjuCk39qyUM2esy06fdsaG2bz3T8FodoMsz92GNDV3lopYGsbcgh00MBUesqgY");
+                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
                       var checkoutButton = document.getElementById("checkout-button-price_1INXSjE7pu7VL3073VWHLsGy");
                       checkoutButton.addEventListener("click", function () {
@@ -238,8 +238,8 @@
                             // a successful payment.
                             // Instead use one of the strategies described in
                             // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test",
+                            successUrl: "https://kkhr1341.github.io/stripe_test/",
+                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
                           })
                           .then(function (result) {
                             if (result.error) {
@@ -255,7 +255,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
