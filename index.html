@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="favicon.svg" type="svg+xml" />
     <meta name="description" content="" />
 
-    <title>stripeテスト</title>
+    <title>Fame-Ltd</title>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
@@ -20,11 +20,10 @@
     <link rel="stylesheet" href="assets/style.css" type="text/css" />
   </head>
   <body>
-    <!-- <section class="engine"><a href="https://mobirise.info/o">portfolio site templates</a></section> -->
     <section class="header10 cid-rU6HCSrPef mbr-fullscreen mbr-parallax-background" id="header10-0">
       <div class="container">
-        <div class="js-scroll media-container-column mbr-white p-5 align-left col-lg-8 col-md-10">
-          <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">金融<br />コンサルティング<br />ノウハウ</h1>
+        <div class="js-scroll media-container-column mbr-white p-5 align-left fcol">
+          <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">DETAILS<br />KNOWLEDGE<br />GATHERING</h1>
         </div>
       </div>
 
@@ -38,321 +37,330 @@
     <section class="features3 cid-rU6IeUtJZt" id="features3-2">
       <div class="container">
         <div class="media-container-row">
-          <div class="js-scroll-blur card p-3 col-12 col-md-6 col-lg-3">
+          <div class="js-scroll-blur card p-3 f_cont">
             <div class="card-wrapper">
               <div class="card-img">
                 <img src="assets/img/content001.jpg" alt="Mobirise" title="" />
               </div>
               <div class="card-box">
-                <h4 class="card-title mbr-fonts-style display-7">金融基礎知識</h4>
-                <p class="mbr-text mbr-fonts-style display-7">これで貴方も金融プロの仲間入り</p>
-                <p></p>
+                <h4 class="card-title mbr-fonts-style display-7">料金プラン</h4>
+                <p class="mbr-text mbr-fonts-style display-7">100,000<span class="sml">円</span></p>
+                <h4 class="card-title mbr-fonts-style display-7">安心サポート</h4>
+                <p class="mbr-text mbr-fonts-style display-7">10日間</p>
               </div>
-              <div class="mbr-section-btn text-center">
-                <div class="navbar-buttons mbr-section-btn">
-                  <!-- Load Stripe.js on your website. -->
-                  <script src="https://js.stripe.com/v3"></script>
-                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout" role="link" type="button">5000円<br />購入する</button>
+              <div class="navbar-buttons text-center mbr-section-btn">
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn btn-primary" id="checkout-button-price_1IknMlDV8PGzT8FTitr9cCiP" role="link" type="button">購入する</button>
 
-                  <div id="error-message"></div>
+                <div id="error-message"></div>
 
-                  <script>
-                    (function () {
-                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+                <script>
+                  (function () {
+                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
-                      var checkoutButton = document.getElementById("checkout");
-                      checkoutButton.addEventListener("click", function () {
-                        // When the customer clicks on the button, redirect
-                        // them to Checkout.
-                        stripe
-                          .redirectToCheckout({
-                            lineItems: [{ price: "price_1IRDgODV8PGzT8FTQRfvvr9j", quantity: 1 }],
-                            mode: "payment",
-                            // Do not rely on the redirect to the successUrl for fulfilling
-                            // purchases, customers may not always reach the success_url after
-                            // a successful payment.
-                            // Instead use one of the strategies described in
-                            // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test/success.html",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
-                          })
-                          .then(function (result) {
-                            if (result.error) {
-                              // If `redirectToCheckout` fails due to a browser or network
-                              // error, display the localized error message to your customer.
-                              var displayError = document.getElementById("error-message");
-                              displayError.textContent = result.error.message;
-                            }
-                          });
-                      });
-                    })();
-                  </script>
-                </div>
+                    var checkoutButton = document.getElementById("checkout-button-price_1IknMlDV8PGzT8FTitr9cCiP");
+                    checkoutButton.addEventListener("click", function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe
+                        .redirectToCheckout({
+                          lineItems: [{ price: "price_1IknMlDV8PGzT8FTitr9cCiP", quantity: 1 }],
+                          mode: "payment",
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: "https://stripe-test.ripple-dd.com/",
+                          cancelUrl: "https://stripe-test.ripple-dd.com/",
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById("error-message");
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                    });
+                  })();
+                </script>
               </div>
             </div>
           </div>
 
-          <div class="js-scroll-blur card p-3 col-12 col-md-6 col-lg-3">
+          <div class="js-scroll-blur card p-3 f_cont">
             <div class="card-wrapper">
               <div class="card-img">
                 <img src="assets/img/content002.jpg" alt="Mobirise" title="" />
               </div>
               <div class="card-box">
-                <h4 class="card-title mbr-fonts-style display-7">コンサルティングノウハウ</h4>
-                <p class="mbr-text mbr-fonts-style display-7">年収億越え稼げるコンサルティングノウハウ</p>
+                <h4 class="card-title mbr-fonts-style display-7">料金プラン</h4>
+                <p class="mbr-text mbr-fonts-style display-7">200,000<span class="sml">円</span></p>
+                <h4 class="card-title mbr-fonts-style display-7">安心サポート</h4>
+                <p class="mbr-text mbr-fonts-style display-7">15日間</p>
               </div>
-              <div class="mbr-section-btn text-center">
-                <div class="navbar-buttons mbr-section-btn">
-                  <!-- Load Stripe.js on your website. -->
-                  <script src="https://js.stripe.com/v3"></script>
+              <div class="navbar-buttons text-center mbr-section-btn">
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
 
-                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1IRDhGDV8PGzT8FTPs49S6MF" role="link" type="button">30000円<br />購入する</button>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn btn-primary" id="checkout-button-price_1IknNiDV8PGzT8FTPG8dBVRy" role="link" type="button">購入する</button>
 
-                  <div id="error-message"></div>
+                <div id="error-message"></div>
 
-                  <script>
-                    (function () {
-                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+                <script>
+                  (function () {
+                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
-                      var checkoutButton = document.getElementById("checkout-button-price_1IRDhGDV8PGzT8FTPs49S6MF");
-                      checkoutButton.addEventListener("click", function () {
-                        // When the customer clicks on the button, redirect
-                        // them to Checkout.
-                        stripe
-                          .redirectToCheckout({
-                            lineItems: [{ price: "price_1IRDhGDV8PGzT8FTPs49S6MF", quantity: 1 }],
-                            mode: "payment",
-                            // Do not rely on the redirect to the successUrl for fulfilling
-                            // purchases, customers may not always reach the success_url after
-                            // a successful payment.
-                            // Instead use one of the strategies described in
-                            // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test/success.html",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
-                          })
-                          .then(function (result) {
-                            if (result.error) {
-                              // If `redirectToCheckout` fails due to a browser or network
-                              // error, display the localized error message to your customer.
-                              var displayError = document.getElementById("error-message");
-                              displayError.textContent = result.error.message;
-                            }
-                          });
-                      });
-                    })();
-                  </script>
-                </div>
+                    var checkoutButton = document.getElementById("checkout-button-price_1IknNiDV8PGzT8FTPG8dBVRy");
+                    checkoutButton.addEventListener("click", function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe
+                        .redirectToCheckout({
+                          lineItems: [{ price: "price_1IknNiDV8PGzT8FTPG8dBVRy", quantity: 1 }],
+                          mode: "payment",
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: "https://stripe-test.ripple-dd.com/",
+                          cancelUrl: "https://stripe-test.ripple-dd.com/",
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById("error-message");
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                    });
+                  })();
+                </script>
               </div>
             </div>
           </div>
 
-          <div class="js-scroll-blur card p-3 col-12 col-md-6 col-lg-3">
+          <div class="js-scroll-blur card p-3 f_cont">
             <div class="card-wrapper">
               <div class="card-img">
                 <img src="assets/img/content003.jpg" alt="Mobirise" title="" />
               </div>
               <div class="card-box">
-                <h4 class="card-title mbr-fonts-style display-7">金融応用知識</h4>
-                <p class="mbr-text mbr-fonts-style display-7">10億以上売り上げた、誰も知らない金融ノウハウ伝授</p>
+                <h4 class="card-title mbr-fonts-style display-7">料金プラン</h4>
+                <p class="mbr-text mbr-fonts-style display-7">300,000<span class="sml">円</span></p>
+                <h4 class="card-title mbr-fonts-style display-7">安心サポート</h4>
+                <p class="mbr-text mbr-fonts-style display-7">30日間</p>
               </div>
-              <div class="mbr-section-btn text-center">
-                <div class="navbar-buttons mbr-section-btn">
-                  <script src="https://js.stripe.com/v3"></script>
+              <div class="navbar-buttons text-center mbr-section-btn">
+                <script src="https://js.stripe.com/v3"></script>
 
-                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1IRDhsDV8PGzT8FTcsDzY7KZ" role="link" type="button">300000円<br />購入する</button>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn btn-primary" id="checkout-button-price_1IknOYDV8PGzT8FTd4Q809cf" role="link" type="button">購入する</button>
 
-                  <div id="error-message"></div>
+                <div id="error-message"></div>
 
-                  <script>
-                    (function () {
-                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+                <script>
+                  (function () {
+                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
-                      var checkoutButton = document.getElementById("checkout-button-price_1IRDhsDV8PGzT8FTcsDzY7KZ");
-                      checkoutButton.addEventListener("click", function () {
-                        // When the customer clicks on the button, redirect
-                        // them to Checkout.
-                        stripe
-                          .redirectToCheckout({
-                            lineItems: [{ price: "price_1IRDhsDV8PGzT8FTcsDzY7KZ", quantity: 1 }],
-                            mode: "payment",
-                            // Do not rely on the redirect to the successUrl for fulfilling
-                            // purchases, customers may not always reach the success_url after
-                            // a successful payment.
-                            // Instead use one of the strategies described in
-                            // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test/success.html",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
-                          })
-                          .then(function (result) {
-                            if (result.error) {
-                              // If `redirectToCheckout` fails due to a browser or network
-                              // error, display the localized error message to your customer.
-                              var displayError = document.getElementById("error-message");
-                              displayError.textContent = result.error.message;
-                            }
-                          });
-                      });
-                    })();
-                  </script>
-                </div>
+                    var checkoutButton = document.getElementById("checkout-button-price_1IknOYDV8PGzT8FTd4Q809cf");
+                    checkoutButton.addEventListener("click", function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe
+                        .redirectToCheckout({
+                          lineItems: [{ price: "price_1IknOYDV8PGzT8FTd4Q809cf", quantity: 1 }],
+                          mode: "payment",
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: "https://stripe-test.ripple-dd.com/",
+                          cancelUrl: "https://stripe-test.ripple-dd.com/",
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById("error-message");
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                    });
+                  })();
+                </script>
               </div>
             </div>
           </div>
 
-          <div class="js-scroll-blur card p-3 col-12 col-md-6 col-lg-3">
+          <div class="js-scroll-blur card p-3 f_cont">
             <div class="card-wrapper">
               <div class="card-img">
                 <img src="assets/img/content004.jpg" alt="Mobirise" title="" />
               </div>
               <div class="card-box">
-                <h4 class="card-title mbr-fonts-style display-7">サブスクプラン</h4>
-                <p class="mbr-text mbr-fonts-style display-7"></p>
+                <h4 class="card-title mbr-fonts-style display-7">料金プラン</h4>
+                <p class="mbr-text mbr-fonts-style display-7">500,000<span class="sml">円</span></p>
+                <h4 class="card-title mbr-fonts-style display-7">安心サポート</h4>
+                <p class="mbr-text mbr-fonts-style display-7">45日間</p>
               </div>
-              <div class="mbr-section-btn text-center">
-                <div class="navbar-buttons mbr-section-btn">
-                  <!-- Load Stripe.js on your website. -->
-                  <script src="https://js.stripe.com/v3"></script>
+              <div class="navbar-buttons text-center mbr-section-btn">
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
 
-                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                  <button class="btn btn-primary" id="checkout-button-price_1IRVU2DV8PGzT8FTXCjcBscM" role="link" type="button">購入する</button>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn btn-primary" id="checkout-button-price_1IknPhDV8PGzT8FTMjLqGL4U" role="link" type="button">購入する</button>
 
-                  <div id="error-message"></div>
+                <div id="error-message"></div>
 
-                  <script>
-                    (function () {
-                      var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+                <script>
+                  (function () {
+                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
 
-                      var checkoutButton = document.getElementById("checkout-button-price_1IRVU2DV8PGzT8FTXCjcBscM");
-                      checkoutButton.addEventListener("click", function () {
-                        // When the customer clicks on the button, redirect
-                        // them to Checkout.
-                        stripe
-                          .redirectToCheckout({
-                            lineItems: [{ price: "price_1IRVU2DV8PGzT8FTXCjcBscM", quantity: 1 }],
-                            mode: "payment",
-                            // Do not rely on the redirect to the successUrl for fulfilling
-                            // purchases, customers may not always reach the success_url after
-                            // a successful payment.
-                            // Instead use one of the strategies described in
-                            // https://stripe.com/docs/payments/checkout/fulfillment
-                            successUrl: "https://kkhr1341.github.io/stripe_test/success.html",
-                            cancelUrl: "https://kkhr1341.github.io/stripe_test/",
-                          })
-                          .then(function (result) {
-                            if (result.error) {
-                              // If `redirectToCheckout` fails due to a browser or network
-                              // error, display the localized error message to your customer.
-                              var displayError = document.getElementById("error-message");
-                              displayError.textContent = result.error.message;
-                            }
-                          });
-                      });
-                    })();
-                  </script>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="mbr-section info4 cid-rUY4Kih0N7" id="info4-9">
-      <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35)"></div>
-      <div class="container">
-        <div class="justify-content-center row">
-          <div class="js-scroll media-container-column title col-12 col-md-10">
-            <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2">ローンチ体験キット</h2>
-            <h3 class="mbr-section-subtitle align-right mbr-light mbr-white pb-3 mbr-fonts-style display-5">買う方から売る方へ。<br />仕掛ける側へ行こう</h3>
-            <p class="mbr-text align-right mbr-white mbr-fonts-style display-7">
-              <strong>説明のテキスト説明のテキスト説明のテキスト<br />説明のテキスト説明のテキスト</strong><br />
-              <strong>説明のテキスト<br />説明のテキスト説明のテキスト説明のテキスト<br />説明のテキスト</strong><br />
-              <strong>説明のテキスト説明のテキスト</strong><br />
-              <strong>説明のテキスト説明のテキスト</strong>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="header3 cid-rUYf6AciFR mbr-parallax-background" id="header3-b">
-      <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35)"></div>
-
-      <div class="container">
-        <div class="js-scroll-blur media-container-row">
-          <div class="mbr-figure" style="width: 100%">
-            <img src="assets/img/main-image003.jpg" alt="Mobirise" title="" />
-          </div>
-
-          <div class="media-content">
-            <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">・・・・で</h1>
-
-            <div class="mbr-section-text mbr-white pb-3">
-              <p class="mbr-text mbr-fonts-style display-5">内容説明のテキスト<br />内容説明のテキスト内容説明のテキスト<br />内容説明のテキスト<br />内容説明のテキスト<br />内容説明のテキスト内容説明のテキスト<br />内容説明のテキスト<br />内容説明のテキスト</p>
-            </div>
-            <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4 flat" href="">詳しく見る</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mbr-gallery gallery5 cid-rUUYPNUBkz" id="gallery5-5">
-      <div class="js-scroll container">
-        <h3 class="mbr-section-title align-center mbr-fonts-style display-2">・・・・<br />・・・・・・</h3>
-        <h4 class="mbr-section-subtitle align-center pb-4 mbr-fonts-style display-5">・・・・・・・・・</h4>
-
-        <div class="modal mbr-slider fade" id="carouselModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div id="mbrCarousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="assets/images/background1.jpg" alt="" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="assets/images/background2.jpg" alt="" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="assets/images/background3.jpg" alt="" />
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="assets/images/background4.jpg" alt="" />
-                    </div>
-                  </div>
-                  <ol class="carousel-indicators">
-                    <li data-target="#mbrCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#mbrCarousel" data-slide-to="1"></li>
-                    <li data-target="#mbrCarousel" data-slide-to="2"></li>
-                    <li data-target="#mbrCarousel" data-slide-to="3"></li>
-                  </ol>
-                  <a role="button" href="" class="close" data-dismiss="modal" aria-label="Close"> </a>
-                  <a class="carousel-control-prev carousel-control" href="index.html#mbrCarousel" role="button" data-slide="prev">
-                    <span class="mbri-left mbr-iconfont" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next carousel-control" href="index.html#mbrCarousel" role="button" data-slide="next">
-                    <span class="mbri-right mbr-iconfont" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
+                    var checkoutButton = document.getElementById("checkout-button-price_1IknPhDV8PGzT8FTMjLqGL4U");
+                    checkoutButton.addEventListener("click", function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe
+                        .redirectToCheckout({
+                          lineItems: [{ price: "price_1IknPhDV8PGzT8FTMjLqGL4U", quantity: 1 }],
+                          mode: "payment",
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: "https://stripe-test.ripple-dd.com/",
+                          cancelUrl: "https://stripe-test.ripple-dd.com/",
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById("error-message");
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                    });
+                  })();
+                </script>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="js-scroll-blur card p-3 f_cont">
+            <div class="card-wrapper">
+              <div class="card-img">
+                <img src="assets/img/content004.jpg" alt="Mobirise" title="" />
+              </div>
+              <div class="card-box">
+                <h4 class="card-title mbr-fonts-style display-7">料金プラン</h4>
+                <p class="mbr-text mbr-fonts-style display-7">750,000<span class="sml">円</span></p>
+                <h4 class="card-title mbr-fonts-style display-7">安心サポート</h4>
+                <p class="mbr-text mbr-fonts-style display-7">60日間</p>
+              </div>
+              <div class="navbar-buttons text-center mbr-section-btn">
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
 
-    <section class="mbr-section info4 cid-rUXW8Cp9rz" id="info4-6">
-      <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35)"></div>
-      <div class="js-scroll-blur container">
-        <div class="justify-content-center row">
-          <div class="media-container-column title col-12 col-md-10">
-            <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2">・・とは</h2>
-            <h3 class="mbr-section-subtitle align-right mbr-light mbr-white pb-3 mbr-fonts-style display-5">説明のテキストがはいります</h3>
-            <p class="mbr-text align-right mbr-white mbr-fonts-style display-7">説明のテキスト<br />説明のテキスト説明のテキスト<br />説明のテキスト説明のテキスト説明のテキスト説明のテキスト<br />説明のテキスト<br />説明のテキスト説明のテキスト説明のテキスト<br />説明のテキスト<br />説明のテキスト</p>
-            <div class="mbr-section-btn align-right py-4"><a class="btn btn-primary display-4 flat" href="">ボタン</a></div>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn btn-primary" id="checkout-button-price_1IknQIDV8PGzT8FTMyRMUPsC" role="link" type="button">購入する</button>
+
+                <div id="error-message"></div>
+
+                <script>
+                  (function () {
+                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+
+                    var checkoutButton = document.getElementById("checkout-button-price_1IknQIDV8PGzT8FTMyRMUPsC");
+                    checkoutButton.addEventListener("click", function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe
+                        .redirectToCheckout({
+                          lineItems: [{ price: "price_1IknQIDV8PGzT8FTMyRMUPsC", quantity: 1 }],
+                          mode: "payment",
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: "https://stripe-test.ripple-dd.com/",
+                          cancelUrl: "https://stripe-test.ripple-dd.com/",
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById("error-message");
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                    });
+                  })();
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="js-scroll-blur card p-3 f_cont">
+            <div class="card-wrapper">
+              <div class="card-img">
+                <img src="assets/img/content004.jpg" alt="Mobirise" title="" />
+              </div>
+              <div class="card-box">
+                <h4 class="card-title mbr-fonts-style display-7">料金プラン</h4>
+                <p class="mbr-text mbr-fonts-style display-7">1000,000<span class="sml">円</span></p>
+                <h4 class="card-title mbr-fonts-style display-7">安心サポート</h4>
+                <p class="mbr-text mbr-fonts-style display-7">75日間</p>
+              </div>
+              <div class="navbar-buttons text-center mbr-section-btn">
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
+
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn btn-primary" id="checkout-button-price_1IknQjDV8PGzT8FT0h2hlBuY" role="link" type="button">購入する</button>
+
+                <div id="error-message"></div>
+
+                <script>
+                  (function () {
+                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+
+                    var checkoutButton = document.getElementById("checkout-button-price_1IknQjDV8PGzT8FT0h2hlBuY");
+                    checkoutButton.addEventListener("click", function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe
+                        .redirectToCheckout({
+                          lineItems: [{ price: "price_1IknQjDV8PGzT8FT0h2hlBuY", quantity: 1 }],
+                          mode: "payment",
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: "https://stripe-test.ripple-dd.com/",
+                          cancelUrl: "https://stripe-test.ripple-dd.com/",
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById("error-message");
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                    });
+                  })();
+                </script>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -360,7 +368,7 @@
 
     <section class="mbr-section info2 cid-rU6ITF7OTk" id="info2-4">
       <div class="container">
-        <div class="row main justify-content-center">
+        <div class="row main justify-content-center" style="max-width: 1024px; margin: auto">
           <div class="media-container-column col-12 col-lg-3 col-md-4">
             <div class="mbr-section-btn align-left py-4"><a class="btn btn-primary display-4 tw_pri" href="">お問い合わせ</a></div>
           </div>

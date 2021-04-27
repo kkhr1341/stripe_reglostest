@@ -16,6 +16,7 @@ section,
 .container-fluid {
   position: relative;
   word-wrap: break-word;
+  overflow: hidden;
 }
 
 a.mbr-iconfont:hover {
@@ -279,13 +280,6 @@ section .mbr-background-video-preview {
   width: 100%;
 }
 
-@media (min-width: 992px) {
-  .media-container-row {
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-}
 figure {
   overflow: hidden;
 }
@@ -642,8 +636,8 @@ blockquote {
 }
 .mbr-arrow > a > i {
   position: absolute;
-  top: -2px;
-  left: 15px;
+  top: 10px;
+  left: 20px;
   font-size: 2rem;
 }
 
@@ -767,11 +761,6 @@ blockquote {
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
-  .mbr-arrow {
-    display: none;
-  }
-}
 .navbar {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
