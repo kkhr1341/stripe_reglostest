@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="shortcut icon" href="favicon.svg" type="svg+xml" />
     <meta name="description" content="" />
 
@@ -67,7 +67,10 @@
                       // them to Checkout.
                       stripe
                         .redirectToCheckout({
-                          lineItems: [{ price: "price_1Ilrd9LYE6AQkULFOS5s46lU", quantity: 1 }],
+                          lineItems: [
+                            { price: "price_1IlrfeLYE6AQkULFJnsrgIOm", quantity: 1 },
+                            { price: "price_1Ilrd9LYE6AQkULFOS5s46lU", quantity: 1 },
+                          ],
                           mode: "subscription",
                           // Do not rely on the redirect to the successUrl for fulfilling
                           // purchases, customers may not always reach the success_url after
