@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="favicon.svg" type="svg+xml" />
+    <meta name="description" content="" />
+
+    <title>Fame-Ltd</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="assets/tether/tether.min.css" />
+    <link rel="stylesheet" href="assets/dropdown/css/style.css" />
+    <link rel="stylesheet" href="assets/theme/css/style.css" />
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css" />
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css" />
+    <link rel="stylesheet" href="assets/style.css" type="text/css" />
+  </head>
+  <body>
+    <section class="header10 cid-rU6HCSrPef mbr-fullscreen mbr-parallax-background" id="header10-0">
+      <div class="container">
+        <div class="js-scroll media-container-column mbr-white p-5 align-left fcol">
+          <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">DETAILS<br />KNOWLEDGE<br />GATHERING</h1>
+        </div>
+      </div>
+
+      <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+          <i class="mbri-down mbr-iconfont"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="features3 cid-rU6IeUtJZt" id="features3-2">
+      <div class="container" id="next">
+        <div class="media-container-row">
+          <div class="js-scroll-blur card p-3">
+            <div class="card-wrapper">
+              <div class="card-img">
+                <img src="assets/img/image001.jpg" alt="Mobirise" title="" />
+              </div>
+              <div class="card-box">
+                <h4 class="card-title mbr-fonts-style display-7">事前説明</h4>
+                <p class="mbr-text mbr-fonts-style display-7">5,000<span class="sml">円</span></p>
+              </div>
+              <div class="navbar-buttons text-center mbr-section-btn">
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button class="btn btn-primary" id="checkout-button-price_1IkobkDV8PGzT8FTQB2MKmih" role="link" type="button">購入する</button>
+
+                <div id="error-message"></div>
+
+                <script>
+                  (function () {
+                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+
+                    var checkoutButton = document.getElementById("checkout-button-price_1IkobkDV8PGzT8FTQB2MKmih");
+                    checkoutButton.addEventListener("click", function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe
+                        .redirectToCheckout({
+                          lineItems: [{ price: "price_1IkobkDV8PGzT8FTQB2MKmih", quantity: 1 }],
+                          mode: "payment",
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: "https://credit.fame-ltd.com",
+                          cancelUrl: "https://credit.fame-ltd.com",
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById("error-message");
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                    });
+                  })();
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mbr-section info2 cid-rU6ITF7OTk" id="info2-4">
+      <div class="container">
+        <div class="row main justify-content-center" style="max-width: 1024px; margin: auto">
+          <div class="media-container-column col-12 col-lg-3 col-md-4">
+            <div class="mbr-section-btn align-left py-4"><a class="btn btn-primary display-4 tw_pri" href="">お問い合わせ</a></div>
+          </div>
+          <div class="media-container-column title col-12 col-lg-7 col-md-6">
+            <h3 class="mbr-section-subtitle align-right mbr-light mbr-white mbr-fonts-style display-5">疑問点等ありましたら<br />こちらまでお気軽にお問い合わせください</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/parallax/jarallax.min.js"></script>
+    <script src="assets/dropdown/js/nav-dropdown.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          $(".js-scroll").each(function () {
+            let imgPos = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if (scroll > imgPos - windowHeight + 10 && scroll < imgPos - windowHeight + windowHeight + 400) {
+              $(this).addClass("js-scroll-in");
+            } else {
+              $(this).removeClass("js-scroll-in");
+            }
+          });
+        });
+
+        $(window).scroll(function () {
+          $(".js-scroll-blur").each(function () {
+            let imgPos = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if (scroll > imgPos - windowHeight + 10 && scroll < imgPos - windowHeight + windowHeight + 400) {
+              $(this).addClass("js-scroll-blur-in");
+            } else {
+              $(this).removeClass("js-scroll-blur-in");
+            }
+          });
+        });
+      });
+      $(function () {
+        $(".js-scroll").each(function () {
+          let imgPos = $(this).offset().top;
+          let scroll = $(window).scrollTop();
+          let windowHeight = $(window).height();
+          if (scroll > imgPos - windowHeight + 50) {
+            $(this).addClass("js-scroll-in");
+          }
+        });
+      });
+      $(function () {
+        $(".js-scroll-blur").each(function () {
+          let imgPos = $(this).offset().top;
+          let scroll = $(window).scrollTop();
+          let windowHeight = $(window).height();
+          if (scroll > imgPos - windowHeight + 50) {
+            $(this).addClass("js-scroll-blur-in");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
