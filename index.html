@@ -53,29 +53,29 @@
                 <!-- Load Stripe.js on your website. -->
                 <script src="https://js.stripe.com/v3"></script>
                 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                <button class="btn btn-primary" id="checkout-button-price_1IknMlDV8PGzT8FTitr9cCiP" role="link" type="button">購入する</button>
+                <button class="btn btn-primary" id="checkout-button-price_1Ilrd9LYE6AQkULFOS5s46lU" role="link" type="button">購入する</button>
 
                 <div id="error-message"></div>
 
                 <script>
                   (function () {
-                    var stripe = Stripe("pk_live_51IR9pdDV8PGzT8FT3u8fvd80qVDiNrck2MiBDmR7UvAhtifqE2iI96N6i1LlkSToQBWNRG44X6EytX7sIShZjuBQ00jzcXakhQ");
+                    var stripe = Stripe("pk_test_51IgVkWLYE6AQkULFMmfVCXJPH5lowWEPHfjrj4eq8aWSFiIRHnODGBL3LqeRuJxQpaAOyIvOa4uaSo7dbFOC0uGo00lIx1NIl7");
 
-                    var checkoutButton = document.getElementById("checkout-button-price_1IknMlDV8PGzT8FTitr9cCiP");
+                    var checkoutButton = document.getElementById("checkout-button-price_1Ilrd9LYE6AQkULFOS5s46lU");
                     checkoutButton.addEventListener("click", function () {
                       // When the customer clicks on the button, redirect
                       // them to Checkout.
                       stripe
                         .redirectToCheckout({
-                          lineItems: [{ price: "price_1IknMlDV8PGzT8FTitr9cCiP", quantity: 1 }],
-                          mode: "payment",
+                          lineItems: [{ price: "price_1Ilrd9LYE6AQkULFOS5s46lU", quantity: 1 }],
+                          mode: "subscription",
                           // Do not rely on the redirect to the successUrl for fulfilling
                           // purchases, customers may not always reach the success_url after
                           // a successful payment.
                           // Instead use one of the strategies described in
                           // https://stripe.com/docs/payments/checkout/fulfillment
-                          successUrl: "https://credit.fame-ltd.com",
-                          cancelUrl: "https://credit.fame-ltd.com",
+                          successUrl: "https://kkhr1341.github.io/stripe_reglostest/",
+                          cancelUrl: "https://kkhr1341.github.io/stripe_reglostest/",
                         })
                         .then(function (result) {
                           if (result.error) {
